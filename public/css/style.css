@@ -49,13 +49,14 @@ label, input {
 
 input[type="text"] {
     padding: .25rem;
+    margin:auto
 }
 
 input[type="submit"] {
     background-color: lightgrey;
     border: none;
     padding: .375rem 1rem;
-    margin-top: 10px;
+    margin: 10px auto;
 }
 table {
     margin: 1rem auto;

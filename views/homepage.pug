@@ -1,0 +1,22 @@
+doctype html
+html 
+  head
+    title= `${title}`
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet", href="/css/style.css")
+  body    
+    h1 Craig's Guitars:
+    a (href="/update-cobj") Add to this table
+    table
+      tr
+        th Brand
+        th Name
+        th Type
+        th Nut Material 
+      each guitar in data
+        tr
+          td #{guitar.properties.brand}
+          td #{guitar.properties.name}
+          td #{guitar.properties.type}
+          td #{guitar.properties.nut_material}
+          td #{guitar.properties.played_live_}
