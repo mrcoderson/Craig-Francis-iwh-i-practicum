@@ -4,10 +4,11 @@ body, * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 h1 {
-    margin: 1rem;
+    margin: 2rem 1rem;
 }
 
 .cards {
@@ -55,4 +56,25 @@ input[type="submit"] {
     border: none;
     padding: .375rem 1rem;
     margin-top: 10px;
+}
+table {
+    margin: 1rem auto;
+    border-collapse: collapse;
+}
+th, td {
+    text-align: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+tr {
+    border-bottom: 1px solid lightgrey;
+}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: lightgrey;
+}
+td {
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
