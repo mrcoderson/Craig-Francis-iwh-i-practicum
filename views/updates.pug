@@ -18,4 +18,6 @@ html
       input(type="text" id="type" name="position" required)
       input(type="submit" value="Add Player")
     br
+    if error
+      p Oh no! That player already exists! Please choose another.
     a(href="/") Return to the Homepage

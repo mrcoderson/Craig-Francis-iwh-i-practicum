@@ -57,6 +57,7 @@ app.post('/update', async (req, res) => {
         res.redirect('/');
     } catch(err) {
         console.error(err);
+        res.render("updates", { error: err.message });
     }
 
 });
