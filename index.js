@@ -24,7 +24,7 @@ app.get('/', async (req, res) => {
     try {
         const resp = await axios.get(guitars, { headers });
         const data = resp.data.results;
-        res.render('homepage', { title: 'Guitars | HubSpot APIs', data });      
+        res.render('homepage', { title: 'England Players', data });      
     } catch (error) {
         console.error(error);
     }
