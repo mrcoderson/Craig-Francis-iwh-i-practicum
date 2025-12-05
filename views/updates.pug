@@ -5,16 +5,16 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="stylesheet", href="/css/style.css")
   body    
-    h1 Add to Craig's guitars:
+    h1 Add to England Palyers Table:
     form(action="/update" method="POST")
-      label(for="brand") Brand:
-      input(type="text" id="brand" name="brand" required) 
+      label(for="name") Name:
+      input(type="text" id="name" name="name" required) 
       br
-      label(for="name") Name: 
-      input(type="text" id="name" name="name" required)
+      label(for="club") Club: 
+      input(type="text" id="club" name="club" required)
       br
-      label(for="model_number") Model number:
-      input(type="text" id="type" name="model_number" required)
-      input(type="submit" value="Add Guitar")
+      label(for="position") Position:
+      input(type="text" id="type" name="position" required)
+      input(type="submit" value="Add Player")
     br
     a(href="/") Return to the Homepage
