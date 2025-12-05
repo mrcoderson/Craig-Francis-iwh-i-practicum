@@ -6,8 +6,14 @@ body, * {
     padding: 0;
     text-align: center;
 }
-
+body {
+    background-image: url("img/superHarry.jpg");
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 20% auto;
+}
 h1 {
+    color: #25659a;
     margin: 2rem 1rem;
 }
 img {
