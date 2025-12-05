@@ -12,7 +12,6 @@ app.use(express.json());
 
 // * Please DO NOT INCLUDE the private app access token in your repo. Don't do this practicum in your normal account.
 const PRIVATE_APP_ACCESS = process.env.HS_TOKEN;
-console.log(PRIVATE_APP_ACCESS);
 // TODO: ROUTE 1 - Create a new app.get route for the homepage to call your custom object data. Pass this data along to the front-end and create a new pug template in the views folder.
 
 app.get('/', async (req, res) => {
@@ -41,21 +40,20 @@ app.get('/update-cobj', async (req, res) => {
 app.post('/update', async (req, res) => {
     const update = {
         "properties" : {
-            "brand": req.body.brand,
-            "guitar_name": req.body.name,
-            "model_number": req.body.model_number
+            "name": req.body.name,
+            "club": req.body.club,
+            "position": req.body.position
         }
     }
 
-    const model = req.body.name;
-    const updateGuitar = "https://api.hubapi.com/crm/v3/objects/2-194880132";
+    const updatePlayer = "https://api.hubapi.com/crm/v3/objects/2-195485431";
     const headers = {
         "Authorization": `Bearer ${PRIVATE_APP_ACCESS}`,
         'Content-Type': 'application/json'
     };
 
     try { 
-        await axios.post(updateGuitar, update, { headers } );
+        await axios.post(updatePlayer, update, { headers } );
         res.redirect('back');
     } catch(err) {
         console.error(err);
