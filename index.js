@@ -54,7 +54,7 @@ app.post('/update', async (req, res) => {
 
     try { 
         await axios.post(updatePlayer, update, { headers } );
-        res.redirect('back');
+        res.redirect('/');
     } catch(err) {
         console.error(err);
     }
