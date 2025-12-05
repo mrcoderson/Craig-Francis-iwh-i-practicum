@@ -2,7 +2,6 @@ const express = require('express');
 const axios = require('axios');
 const { set } = require('express/lib/application');
 const app = express();
-require('dotenv').config();
 
 
 app.set('view engine', 'pug');
