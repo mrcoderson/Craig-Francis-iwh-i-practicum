@@ -5,15 +5,15 @@ html
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="stylesheet", href="/css/style.css")
   body    
-    h1 Craig's Guitars:
+    h1 England Players:
     a(href="/update-cobj") Add to this table
     table
       tr
-        th Brand
-        th Guitar Name
-        th Model number
-      each guitar in data
+        th Name 
+        th Club
+        th Position
+      each player in data
         tr
-          td #{guitar.properties.brand}
-          td #{guitar.properties.guitar_name}
-          td #{guitar.properties.model_number}
+          td #{player.properties.name}
+          td #{player.properties.club}
+          td #{player.properties.position}
